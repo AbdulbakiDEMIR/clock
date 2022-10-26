@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS IMPORT-->
+    <link rel="stylesheet" href="style.css">
+    <!--JAVASCRIPT IMPORT-->
+    <script type="text/javascript" src="script.js"></script>
+    <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!--use-> font-family: 'Poppins', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!--use-> font-family: 'Orbitron', sans-serif;-->
+    <title>Stopwatch</title>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav>
+        <ul>
+            <li><a href="../">CLOCK</a></li>
+            <li><a href="../countdown">COUNTDOWN</a></li>
+        </ul>
+    </nav>
+    <div class="center">
+        <h1 class="title">STOPWATCH</h1>
+        <div class="clock">
+            <!--Output Areas-->
+            <div class="hours"><h1 id="hours">00</h1></div>
+            <div class="minutes"><h1 id="minutes">00</h1></div>
+            <div class="seconds"><h1 id="seconds">00</h1></div>
+            <div class="milliseconds"><h1 id="milliseconds">00</h1></div>
+        </div>
+        <div class="buttons">
+            <!--Control Buttons-->
+            <button onclick="timeStart()">Start</button>
+            <button onclick="timeStop()">Stop</button>
+            <button onclick="timeContinue()">Continue</button>
+            <button onclick="timeReset()">Reset</button>
+        </div>
+        
+    </div>
+</body>
+</html>

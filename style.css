@@ -1,0 +1,94 @@
+*{margin: 0px; padding: 0px;}
+body {
+    background: #222;
+}
+/********************************/
+/********NAVIGATION BAR**********/
+/********************************/
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100vh;
+    background-color: rgb(84, 84, 84);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    z-index: 10;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+li{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/********************************/
+/************CLOCK***************/
+/********************************/
+.center{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    z-index: 9;
+}
+.clock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: transparent;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+    color: #fff;
+}
+.clock div{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.clock div.hours{
+    border:1px solid #fff ;
+    box-shadow: 0 0 5px 5px rgb(19, 168, 255, 0.5),
+                0 0 5px 5px rgb(19, 168, 255, 0.5) inset;
+}
+.clock div.minutes{
+    border:1px solid #fff ;
+    box-shadow: 0 0 5px 5px rgba(255, 19, 212, 0.5),
+                0 0 5px 5px rgba(255, 19, 212, 0.5) inset;
+}
+.clock div.seconds{
+    border:1px solid #fff ;
+    box-shadow: 0 0 5px 5px rgba(106, 255, 19, 0.5),
+                0 0 5px 5px rgba(106, 225, 19, 0.5) inset;
+}
+.clock div h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 100px;
+    font-weight: 600;
+    color:#fff;
+}
